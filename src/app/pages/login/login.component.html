@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login</title>
+  <link rel="stylesheet" href="login.component.css">
+</head>
+
+<body>
+  <div class="img-container">
+    <img src="../../../assets/images/logo.jpg" alt="Logo Agrestina">
+  </div>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Usuário" [required]="this.login">
+      <input type="password" placeholder="Senha" [required]="this.login">
+      <button type="submit" (click)="loginMethod()">Entrar</button>
+      <button class="esqueceu-senha botao" (click)="forgetPassword()">Esqueceu a sua senha?</button>
+      <button class="botao" (click)="newUser()">Criar usuário novo</button>
+    </form>
+  </div>
+
+  <footer class="footer-container">
+    <label>© 2024 <span>AGRESTINA</span>. Todos os direitos reservados.</label>
+  </footer>
+</body>
+
+</html>
