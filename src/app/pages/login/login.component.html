@@ -9,17 +9,15 @@
 </head>
 
 <body>
-  <div class="img-container">
-    <img src="../../../assets/images/logo.jpg" alt="Logo Agrestina">
+  <div class="img-container" style="margin-top: 15px;">
+    <img src="../../../assets/images/logo.png" alt="Logo Agrestina">
   </div>
   <div class="login-container">
     <h2>Login</h2>
-    <form>
-      <input type="text" placeholder="Usuário" [required]="this.login">
-      <input type="password" placeholder="Senha" [required]="this.login">
-      <button type="submit" (click)="loginMethod()">Entrar</button>
-      <button class="esqueceu-senha botao" (click)="forgetPassword()">Esqueceu a sua senha?</button>
-      <button class="botao" (click)="newUser()">Criar usuário novo</button>
+    <form (submit)="loginMethod($event)">
+      <input type="text" placeholder="Usuário" #username required (input)="validate()">
+      <input type="password" placeholder="Senha" #password required (input)="validate()">
+      <button type="submit">Entrar</button>
     </form>
   </div>
 

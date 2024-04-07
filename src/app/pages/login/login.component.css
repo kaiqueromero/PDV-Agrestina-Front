@@ -4,15 +4,13 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #161e42;
+    background-color: #151F42;
     font-family: 'Arial', sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
 .login-container {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
     margin: auto;
     width: 100%;
     max-width: 300px;
@@ -50,30 +48,10 @@ body {
 
 .footer-container {
     margin-top: auto;
-    padding: 15px 0px;
+    padding: 20px 0px;
     width: 100%;
     text-align: center;
-    background-color: #161e42;
+    background-color: #151F42;
     color: white;
 }
 
-.botao {
-    display: flex !important;
-    justify-content: center !important;
-    color: white !important;
-    cursor: pointer !important;
-    background: none !important;
-    border: none !important;
-    font: inherit !important;
-    cursor: pointer !important;
-    text-decoration: underline !important;
-}
-
-.botao:hover {
-    text-decoration: none; 
-}
-
-.esqueceu-senha {
-    padding-top: 20px !important;
-    padding-bottom: 10px !important;
-}
